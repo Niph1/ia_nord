@@ -1,0 +1,21 @@
+2A
+Please provide a Java program that uses the interface of a control class for managing salesmen and their
+performance records. In the backend, integrate a local MongoDB database that contains of two collections
+for storing general data for salesmen as well as their social performance records. Please make suitable 
+assumptions on the schema of the two collections. Please do not use frameworks like Spring Boot, use the 
+pure MongoDB driver.
+
+    The solution to this assignment is src/main/java/de/hbrs/ia/code/ManagePersonal.java
+
+2B Does the interface of the control class fulfill the CRUD pattern entirely? If not, please add the missing operations 
+and refactor the given interface accordingly. No implementation of the “U” is required (exception: adding further social 
+performance records to a salesman).
+
+    It does not fully fulfill the CRUD pattern, as the delete action is missing. 
+    I also added a separate read action to filter for a specific year.
+
+2C Test your application sufficiently by developing a Junit-Test Case. If possible, provide roundtrip test to ensure, 
+that now data waste is given after the execution of a test.
+
+    The solution to this assignment is src\test\java\test\ManagePersonalImplTest.java 
+

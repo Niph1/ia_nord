@@ -1,3 +1,6 @@
+## nnord2s
+    See the "solutions" folder for answers requiring text.
+
 ## Useful ressources for lecture Integration Architectures
 (Prof. Dr. Sascha Alda)
 
