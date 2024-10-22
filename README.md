@@ -1,6 +1,7 @@
 ## nnord2s
     See the "solutions" folder for answers requiring text.
-    TODO:       check handling for out of bound scores
+    TODO:       check handling for out of bound scores   
+                add target to gitignore
 
 
 
