@@ -1,5 +1,8 @@
 ## nnord2s
     See the "solutions" folder for answers requiring text.
+    TODO:       check handling for out of bound scores
+
+
 
 ## Useful ressources for lecture Integration Architectures
 (Prof. Dr. Sascha Alda)
