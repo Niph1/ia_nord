@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "259dcfd7-4779-4f57-9257-247514542527",
+		"name": "IA_NORD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39516788"
+	},
+	"item": [
+		{
+			"name": "create_salesman",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sid\": 1,\r\n  \"firstname\": \"Max\",\r\n  \"lastname\": \"Mustermann\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/salesmen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"salesmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_salesman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/salesmen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"salesmen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_one_salesman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/salesmen/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"salesmen",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_salesman_sid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/salesmen/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"salesmen",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_performance_record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sid\": 1,\r\n  \"year\": 2024,\r\n  \"opennessScore\": 5,\r\n  \"leadershipScore\": 4,\r\n  \"socialScore\": 4,\r\n  \"attitudeScore\": 5,\r\n  \"communicationScore\": 4,\r\n  \"integrityScore\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/performance/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"performance",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_performances",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"year\": 2024,\r\n  \"opennessScore\": 5,\r\n  \"leadershipScore\": 4,\r\n  \"socialScore\": 4,\r\n  \"attitudeScore\": 5,\r\n  \"communicationScore\": 4,\r\n  \"integrityScore\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/salesmen/{{sid}}/performance",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"salesmen",
+						"{{sid}}",
+						"performance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_performances_year",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"year\": 2024,\r\n  \"opennessScore\": 5,\r\n  \"leadershipScore\": 4,\r\n  \"socialScore\": 4,\r\n  \"attitudeScore\": 5,\r\n  \"communicationScore\": 4,\r\n  \"integrityScore\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/performance/{{sid}}/{{year}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"performance",
+						"{{sid}}",
+						"{{year}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Port",
+			"value": "3000"
+		},
+		{
+			"key": "URL",
+			"value": "http://localhost:3000/"
+		},
+		{
+			"key": "sid",
+			"value": "1"
+		},
+		{
+			"key": "year",
+			"value": "2024"
+		}
+	]
+}
